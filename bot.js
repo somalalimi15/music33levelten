@@ -1,4 +1,4 @@
-const Discord = require('discord.js');
+const Discord = require('discord.js');
 
 const Util = require('discord.js');
 
@@ -313,7 +313,7 @@ function play(guild, song) {
 
 
 client.on('message', message => {
-    if (message.content === '2help') {
+    if (message.content === '3help') {
         let helpEmbed = new Discord.RichEmbed()
         .setTitle('**أوامر الميوزك...**')
         .addField('**__Play__**', '**لتشغيل اغنية**')
@@ -339,7 +339,7 @@ client.on('message', message => {
     }
 });
 
-client.on('ready', () => {
+    client.on('ready', () => {
      client.user.setActivity("Type | 3Play .",{type: 'Playing'});
 
 });
