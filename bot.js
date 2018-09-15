@@ -313,18 +313,18 @@ function play(guild, song) {
 
 
 client.on('message', message => {
-    if (message.content === '2help') {
+    if (message.content === '3help') {
         let helpEmbed = new Discord.RichEmbed()
         .setTitle('**أوامر الميوزك...**')
         .setDescription('**برفكس البوت (Name Bot .)**')
-        .addField('__play__', '**لتشغيل اغنية**')
-        .addField('__join__', '**دخول رومك الصوتي**')
-        .addField('__disconnect__', '**الخروج من رومك الصوتي**')
-        .addField('__skip__', '**تخطي الأغنية**')
-        .addField('__pause__', '**ايقاف الاغنية مؤقتا**')
-        .addField('__resume__', '**تكملة الاغنية**')
-        .addField('__queue__', '**اظهار قائمة التشغيل**')
-        .addField('__np__', '**اظهار الاغنية اللي انت مشغلها حاليا**')
+        .addField('__Play__', '**لتشغيل اغنية**')
+        .addField('__Join__', '**دخول رومك الصوتي**')
+        .addField('__Disconnect__', '**الخروج من رومك الصوتي**')
+        .addField('__Skip__', '**تخطي الأغنية**')
+        .addField('__Pause__', '**ايقاف الاغنية مؤقتا**')
+        .addField('__Resume__', '**تكملة الاغنية**')
+        .addField('__Queue__', '**اظهار قائمة التشغيل**')
+        .addField('__Np__', '**اظهار الاغنية اللي انت مشغلها حاليا**')
         .setFooter('(اوامر عامة) لاظهار الاوامر العامة')
       message.channel.send(helpEmbed);
     }
